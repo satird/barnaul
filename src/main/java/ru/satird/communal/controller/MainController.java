@@ -35,6 +35,7 @@ public class MainController {
             @RequestParam(required = false, defaultValue = Integer.MAX_VALUE + "") Integer size
     ) {
         String sort;
+        System.out.println("Change in local branch");
         if ("desc".equals(order.get()))
             sort = "desc";
         else
